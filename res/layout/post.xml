@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PostText" android:layout_gravity="center_horizontal" android:layout_weight="0.14"
+                    android:hint="发表留言" android:longClickable="false" android:enabled="true" android:height="100dp"
+                    android:singleLine="false" android:gravity="center|bottom|left"
+                    android:maxLength="180"/>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/background_dark"
+                android:layout_alignParentBottom="true" android:layout_alignTop="@+id/postmes"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:id="@+id/postmes"
+                android:background="@android:color/background_dark"
+                android:textColor="@android:color/background_light" android:textSize="15dp"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

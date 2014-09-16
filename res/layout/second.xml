@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1" android:id="@+id/secondLayout"
+              android:baselineAligned="false">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" android:layout_gravity="center_horizontal" android:fillViewport="false"
+            android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/motherlayout">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/listlayout2"
+                    >
+            </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="New Text"
+                    android:id="@+id/moremes"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
